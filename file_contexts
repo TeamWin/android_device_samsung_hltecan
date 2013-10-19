@@ -146,6 +146,7 @@
 /system/xbin/su		u:object_r:su_exec:s0
 /system/vendor/bin/gpsd u:object_r:gpsd_exec:s0
 /system/bin/ping    u:object_r:ping_exec:s0
+/system/lost+found	u:object_r:system_file:s0
 #############################
 # Data files
 #
@@ -195,6 +196,7 @@
 /cache/.*\.restore	u:object_r:cache_backup_file:s0
 # LocalTransport (backup) uses this directory
 /cache/backup(/.*)?	u:object_r:cache_backup_file:s0
+/cache/lost+found u:object_r:cache_file:s0 lost+found
 #############################
 # sysfs files
 #
